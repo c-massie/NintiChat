@@ -15,7 +15,7 @@ apply plugin: 'maven-publish'
 
 version = '1.0'
 group = 'scot.massie.mc.ninti.names' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'nintinames'
+archivesBaseName = 'nintichat'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
@@ -44,7 +44,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                nintinames {
+                nintichat {
                     source sourceSets.main
                 }
             }
@@ -60,7 +60,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                nintinames {
+                nintichat {
                     source sourceSets.main
                 }
             }
@@ -76,10 +76,10 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-            args '--mod', 'nintinames', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+            args '--mod', 'nintichat', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
             mods {
-                nintinames {
+                nintichat {
                     source sourceSets.main
                 }
             }
@@ -121,7 +121,7 @@ dependencies {
 jar {
     manifest {
         attributes([
-            "Specification-Title": "nintinames",
+            "Specification-Title": "nintichat",
             "Specification-Vendor": "ChrisMassie",
             "Specification-Version": "1", // We are version 1 of ourselves
             "Implementation-Title": project.name,
